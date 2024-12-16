@@ -1,0 +1,17 @@
+__pycache__/
+.vscode/
+.ipynb_checkpoints/
+checkpoint/
+cache/
+
+log*
+
+mecab*
+wandb/
+
+*.log
+# *_debug.sh
+mlruns/
+
+*.ipynb
+*test.py
