@@ -1,0 +1,99 @@
+2023年
+12月
+12日，正在澳大利亚悉尼召开的计算机图形学顶级会议
+SIGGRAPH Asia 2023国际会议上，揭晓并颁发了本次会议的各个重要奖项。
+由中国科学技术大学数学科学学院图形计算与感知交互安徽省重点实验室（
+GCL
+实验室）、大连理工大学及微软亚洲研究院的王伟明、王扬抟风、杨周旺、刘利刚、童欣、童伟华、邓建松、陈发来、刘秀平合作发表于
+Siggraph Asia 2013
+的研究工作
+"Cost-effective Printing of 3D Objects with Skin-Frame Structures" [1]
+，获得首届
+Test-of-Time Award
+（时间检验奖）。
+图
+1. Test-of-Time Award
+的奖状和奖杯
+Test-of-Time Award
+奖项介绍
+时间检验奖（
+Test-of-Time Award）是
+SIGGRAPH Asia会议从今年起设立的奖项，
+旨在表彰发表时间距今
+10
+年以上、且对计算机图形学和交互式技术持续产生重大影响的
+SIGGRAPH Asia
+论文。在今年的首届评奖中，大会奖励委员会经过严格评审，最终从
+200
+多篇
+Siggraph Asia
+论文（发表时间在
+2011
+年至
+2013
+年期间）中评选出近十年影响力最高的
+4
+篇论文，获得首届时间检验奖。这四篇获奖论文涵盖了几何、设计、动画、图像
+/
+渲染方向，占比约为
+2%
+。由中国科学技术大学，大连理工大学，和微软亚洲研究院合作完成的这一工作是几何领域唯一的获奖论文。
+图
+2. 作者代表在
+Siggraph Asia 2023大会上接受颁奖
+获奖论文介绍
+该研究论文主要提出了一种
+3D打印的轻量化结构设计与优化方法。
+结构轻量化和稳定性是
+3D
+打印的重要需求。作为图形学领域首篇基于几何与拓扑优化实现轻量化结构设计优化的论文，论文提出的方法
+实现了结构的轻量化的同时，满足了结构的物理稳定性、几何保真性以及结构可打印性等需求。所提出的方法不仅有效地节省了打印材料，而且缩短了制造时间，具有更高的成本效益。此外，该成果还专注于当时最为流行和廉价的
+FDM（熔融沉积式）桌面型
+3D打印机，给出了针对该类打印机的自支撑结构设计方法，大幅减少了支撑材料的浪费（论文中设计的蒙皮框架结构及
+3D打印实物如图
+3所示）。
+图
+3. 
+优化生成的蒙皮框架结构及制造结果
+该研究论文
+在发表之初得到了国内众多媒体的报道，包括《人民日报》及其海外版在内的几十家媒体对我们的成果进行了报道，在业界享有广泛影响力（如图
+4
+）。
+图
+4. 
+各媒体对该研究工作的报道
+该研究论文的发表引起了国内外同行专家和业界的高度关注与认可，在计算机图形学、增材制造、机械设计等领域累计获得
+350
+余次引用（谷歌学术），其中包括多篇关于增材制造和拓扑优化的重要综述论文及国际知名学者的引用，如澳大利亚工程院院士谢亿民教授，
+ACM fellow Daniel Cohen-Or
+教授及莱布尼茨奖获得者
+Leif Kobbelt
+教授等。
+同时，该研究论文的发表激发了图形学领域有关增材制造相关方向的研究热潮，一批优秀的增材制造和结构设计优化相关的研究工作纷纷涌现。
+在
+2013年之后的几年，发表在
+SIGGRAPH、
+SIGGRAPH Asia和
+TVCG等图形学顶级会议期刊上与增材制造和结构设计优化相关的论文呈逐年增长趋势（如图
+5）。
+图
+5. 
+自
+2013
+年论文发表后图形学领域制造相关重要论文发表情况
+SIGGRAPH Asia
+首届
+Test-of-Time Award
+获奖的
+4
+篇论文
+Weiming Wang, Tuanfeng Y.Wang, Zhouwang Yang, Ligang Liu, Weihua Tong, Jiansong Deng, Falai Chen and Xiuping Liu. Cost-effective Printing of 3D Objective with Skin-Frame Structures. ACM Transactions on Graphics (Proc. SIGGRAPH Aisa), 32(6), Article 177: 1-10, 2013. 
+https://dl.acm.org/doi/10.1145/2508363.2508382
+工作介绍：
+http://staff.ustc.edu.cn/~lgliu/Projects/2013_SigAsia_3DPrinting/News/Cost-effective-3D-Printing.htm
+Matthias Nießner, Michael Zollhöfer, Shahram Izadi, Marc Stamminger. Real-time 3D reconstruction at scale using voxel hashing. ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 32(6), Article 169: 1–11, 2013.
+https://dl.acm.org/doi/10.1145/2508363.2508374
+Li Xu, Cewu Lu, Yi Xu, Jiaya Jia. lmage Smoothing via L0 Gradient Minimization. ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 30 (6), Article 174: 1-12, 2011.
+https://dl.acm.org/doi/10.1145/2070781.2024208
+Gilles Daviet, Florence Bertails-Descoubes, Laurence Boissieux. A Hybrid lterative Solver for Robustly Capturing Coulomb Friction in Hair Dynamics. ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 30 (6), Article 139: 1-12, 2011.
+https://dl.acm.org/doi/10.1145/2070781.2024173

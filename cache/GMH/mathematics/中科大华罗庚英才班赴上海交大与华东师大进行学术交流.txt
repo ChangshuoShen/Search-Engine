@@ -1,0 +1,72 @@
+2023
+年
+4
+月
+15-17
+日，中科大华罗庚班
+36
+名同学在马杰教授、杨迪教授、张伟老师和吴笛老师的带领下来到了上海交通大学和华东师范大学进行交流访问。
+16
+日上午，首先由上海交通大学副院长王增琦进行开幕致辞，后由马杰教授介绍中科大华罗庚班培养计划。中科大
+19
+级华班同学李轩宇进行题为《正则变分问题》的报告，介绍了偏微分方程方向的一个问题。他的报告虽然计算繁琐、证明复杂，但详略得当，深入浅出，让大家感受到了这一问题的魅力。上交
+20
+级吴文俊班的芦昱颖同学报告题为《
+Microscopic Mechanism of Capacitive Mixing Process Coupled with Energy Harvesting
+》，介绍了其与其他两位同学合作在能源领域优化的模型算法及其结果。报告内容生动有趣，富有实际应用价值和理论价值。两校学生进行相互提问交流，获益颇丰。中科大
+20
+级华班曾相如同学报告题为《
+Monodromy action and the monodromy theorem
+》，先是用具体的简单例子引入主题，其次又从范畴角度叙述该概念，最后以
+Grothendieck
+的一个重要定理结束报告，整个过程环环相扣。
+中科大
+19
+级华班同学李轩宇做题为《正则变分问题》的报告
+上交
+20
+级吴文俊班的芦昱颖做题为《
+Microscopic Mechanism of Capacitive Mixing Process Coupled with Energy Harvesting
+》的报告
+中科大
+20
+级华班曾相如同学做题为《
+Monodromy action and the monodromy theorem
+》的报告
+17
+日上午，同学们前往华东师范大学闵行校区教学楼
+102
+室进行交流。科大马杰教授介绍华罗庚班学生培养情况；朱萌教授介绍华东师大数学拔尖班学生培养情况。华东师大陈苗芬教授从可写为二整数平方和的素数出发，介绍数论中形如
+的素数问题的历史发展，介绍一种数学思考方式。中科大
+19
+级华班同学陈靖澈进行题为《
+Introduce to the Morse theory
+》的报告，介绍了光滑流形上的
+Morse
+定理，并且由此给出光滑流形上的同调群结构。华东师大
+19
+级拔尖班杨鑫同学做了题为《
+Positivity of Direct Images of Relative Pluricanonical Bundles
+》的报告，介绍代数几何领域的一个工具并用其给出交换情况下
+litaka
+猜想的一个证明。中科大
+19
+级华班同学鲍越恒做了题为《
+Knot theory and its invariants
+》的精彩报告，介绍扭结理论的一些有趣实例以及他与合作者在扭结不变量在嵌入规则几何下上下界的估计的工作。
+中科大
+19
+级华班陈靖澈做题为《
+Introduce to the Morse theory
+》的报告
+华东师大
+19
+级拔尖班杨鑫做题为《
+Positivity of Direct Images of Relative Pluricanonical Bundles
+》的报告
+中科大
+19
+级华班鲍越恒做题为《
+Knot theory and its invariants
+》的报告
+本次活动，不仅拓宽了同学们的视野、提供了多元的数学视角，也让双方数学学院交流了培养优秀人才的经验，增进了两校师生的友谊。

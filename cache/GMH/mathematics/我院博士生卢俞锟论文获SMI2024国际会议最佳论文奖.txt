@@ -1,0 +1,25 @@
+2024
+年
+7
+月，在美国底特律举行的国际会议
+Shape Modeling International (SMI 2024) 
+上，中国科学技术大学数学科学学院的博士生卢俞锟同学的研究论文《
+Computational design of custom-fit PAP masks
+》荣获大会的
+Best Paper Award 
+（最佳论文奖）。
+SMI 
+会议是三维数字建模领域的国际旗舰会议，从
+1997
+年以来已召开
+20
+余届。每次会议上只评选一篇最佳论文奖。
+卢俞锟同学的指导老师是
+我院的
+刘利刚教授。该工作与新加坡科技设计大学、南京信息工程大学及新加坡樟宜综合医院合作完成：针对睡眠呼吸障碍患者面部的特定形状，提出一种基于有限元方法（
+FEM
+）模拟方法，设计和制造个性化的正压通气（
+PAP
+）疗法的面罩，能够有效提高漏气和舒适度方面的面罩贴合性能，并在医院临床治疗中得到应用验证。
+论文信息：
+Yukun Lu, Yuhang Wang, Peng Song, Hang Siang Wong, Yingjuan Mok, Ligang Liu. Computational Design of Custom-Fit PAP Masks. Computers & Graphics (Proc. SMI), 122, 103998, 2024.

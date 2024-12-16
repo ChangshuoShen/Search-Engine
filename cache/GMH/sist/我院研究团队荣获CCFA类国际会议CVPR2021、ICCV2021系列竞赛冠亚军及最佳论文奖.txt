@@ -1,0 +1,63 @@
+2021年6月至10月，中国科学技术大学信息学院研究团队参加了系列重量级国际顶会和相关赛事，获得了若干优异的成绩。
+2021年06月08日，CCF A类国际顶会-国际计算机视觉与模式识别大会(简称IEEE/CVF CVPR 2021，图
+1)
+主办的图文识别与推理-商品价格预测挑战赛“RetailVision Product Pricing in the Wild Challenge”举行了颁奖典礼。
+由
+信息学院自动化系、语音及语言信息处理国家工程实验室
+於俊副教授带领的USTC-NELSLIP
+团队
+(
+於俊、张力文、崔泽宇、谢皓年、张中、余烨、苏雯、高放、双丰
+)
+荣获冠军
+(
+图2)
+。
+值得注意的是，该团队也曾在该挑战赛的前身“IEEE/CVF CVPR 2020超大规模商品图像检测挑战赛”获得冠军。
+IEEE/CVF CVPR
+是计算机视觉和模式识别领域最权威的国际顶会。
+根据最新谷歌学术影响因子，
+其
+在泛人工智能领域排名第一。
+“
+RetailVision Product Pricing in the Wild Challenge”(
+https://retailvisionworkshop.github.io/pricing_challenge_2021/
+)
+收集了世界各地数千家超市的海量货架图片。针对于此，
+USTC-NELSLIP
+团队
+设计了优良的目标检测器来找出图片中的价格标签，接着提出鲁棒的推理算法建立商品与价格标签的对应关系，然后通过高精度的标签文本识别以获得商品价格预测结果。
+该竞赛吸引了包括Google研究院、Facebook研究院等国内外众多队伍参与。
+2021年10月11日，CCF A类国际顶会-国际计算机视觉大会
+(IEEE/CVF ICCV 2021
+，图
+3)
+主办的戴口罩人脸识别研讨会“Masked Face Recognition Challenge & Workshop”举行了颁奖典礼。USTC-NELSLIP团队斩获最佳论文Runner-Up奖(图4)。团队工作由於俊副教授指导研究生郝鑫龙、崔泽宇和贺鹏来完成。
+IEEE/CVF ICCV
+是计算机视觉领域最重要的国际顶会，
+被
+ICT
+学术会议排名和中国计算机学会等评为最高级别学术会议，在业内具有极高的评价
+。
+“
+Masked Face Recognition Challenge & Workshop”(
+https://ibug.doc.ic.ac.uk/resources/masked-face-recognition-challenge-workshop-iccv-21/
+)
+专注于口罩存在下的人脸识别方法基准测试。针对于此，USTC-NELSLIP的解决方案由三部分组成：普通人脸图像口罩合成、人种图像重采样、多Loss函数集成，且不同人种人脸识别率间的偏差是着重关注的指标。从而据此获得了公平和高精度的口罩人脸识别结果。
+该研讨会吸引了包括微软研究院、阿里巴巴、商汤科技、神目科技、Kakao Enterprise、清华大学、中国科学院大学等国内外200余支队伍参与。
+2021年10月16日，IEEE/CVF ICCV 2021主办的大规模细粒度食品图像分析挑战赛“
+Large-scale Fine-Grained Food Analysis Challenge”
+举行了颁奖典礼。USTC-NELSLIP团队
+(
+於俊、谢国辰、常昊、张力文、蔡忠鹏、凌强、张中、余烨、苏雯、高放、双丰等
+)
+荣获检索赛道的亚军
+(
+图
+5)
+。
+“
+Large-scale Fine-Grained Food Analysis Challenge”
+旨在利用美团提供的大规模食品数据集，实现食品图像的检索。USTC-NELSLIP团队在数据清洗的基础上，采用图像增强、多种后处理和多模型集成提高了算法的泛化性和鲁棒性。
+该竞赛吸引了包括清华大学、南京理工大学、巴塞罗那大学、新加坡南洋理工大学、阿里巴巴、深兰科技、OPPO、欢聚时代等国内外150支队伍参与。
+上述竞赛和参会得到了国家自然科学基金联合基金、安徽省重点研发计划、中国科学技术大学探索类基金等项目的支持。

@@ -1,0 +1,6 @@
+2023年11月6日，南方科技大学Hisao Ishibuchi教授受邀为我校师生作了题为“多目标进化算法公平性能比较中存在的困难”的研究生高水平学术讲座，感兴趣的师生在高新校区信智楼C301报告厅听取了此次报告。本次报告会由李斌教授主持。
+与单目标优化不同，在多目标优化中，提高一个目标的性能会引起其它一个或多个目标性能的下降。因此，多目标优化问题中不存在一个单独的最优解，而是存在一组表示各个目标间权衡和折中关系的解集。这一解集的求解是很困难的，而具有自然界规律启发式特征的求解方法往往适合近似求解这些困难问题，这些方法被称为进化计算。
+在报告中，Hisao Ishibuchi教授从视觉直观比较、终止条件和种群大小的选择、性能指示器的选择等方面，详细阐述了为什么多目标进化算法性能的公平性能比较是很困难的。
+在报告的最后，现场同学踊跃提问，Hisao Ishibuchi教授耐心的为同学答疑解惑。
+教授简介：
+Hisao Ishibuchi is a Chair Professor at Southern University of Science and Technology, China. He was the IEEE Computational Intelligence Society (CIS) Vice-President for Technical Activities in 2010-2013 and the Editor-in-Chief of IEEE Computational Intelligence Magazine in 2014-2019. Currently he is an IEEE CIS Administrative Committee Member, an IEEE CIS Distinguished Lecturer, and an Associate Editor of several journals such as IEEE Transactions on Cybernetics and ACM Computing Surveys. He is also General Chair of IEEE WCCI 2024. He received a Fuzzy Systems Pioneer Award from IEEE CIS in 2019, an Outstanding Paper Award from IEEE Transactions on Evolutionary Computation in 2020, an Enrique Ruspini Award for Meritorious Service from IEEE CIS, and Best Paper Awards from FUZZ-IEEE 2009, 2011, EMO 2019, and GECCO 2004, 2017, 2018, 2020, 2021. He also received a JSPS prize in 2007. He is an IEEE Fellow.

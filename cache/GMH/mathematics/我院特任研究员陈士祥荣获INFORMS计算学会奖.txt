@@ -1,0 +1,44 @@
+近日
+，运筹与管
+理科学年会（
+2024 INFORMS Annual Meeting
+）在美国西雅图举行。此次年会上，中国科大数学科学学院特任研究员陈士祥荣获
+2024
+年
+INFORMS
+计算学会奖（
+INFORMS Computing Society Prize
+，简称
+ICS Prize
+）。
+   
+INFORMS
+计算学会奖是全球运筹学与计算机科学交叉领域的重要荣誉，致力于推动该领域的创新研究与应用。该奖项每年评选一次，旨在表彰在运筹学与计算交叉领域推动学术进展的最佳英文论文（或一组论文）。
+   
+陈士祥此次获奖的论文包括他与合作者莱斯大学马士谦教授、香港中文大学苏文藻教授、伊利诺伊大学厄巴纳
+-
+香槟分校张潼教授共同发表在《
+SIAM Journal on Optimization
+》上的论文《
+Proximal Gradient Method for Nonsmooth Optimization over the Stiefel Manifold
+》，以及发表在《
+SIAM Review
+》上的论文《
+Nonsmooth Optimization over the Stiefel Manifold and Beyond: Proximal Gradient Method and Recent Variants
+》。此外，马士谦教授及其合作者的另一篇论文也共同入选。评奖委员会评价该系列工作为黎曼流形优化做出了开创性的贡献。 
+   
+陈士祥于
+2023
+年入职中国科大数学科学学院，目前主持国家自然科学基金青年项目。在中国工业与应用数学学会第二十二届年会（
+CSIAM 2024
+）上入选青年人才托举项目。曾在
+SIAM Review
+、
+SIAM J. Opt.
+、
+IEEE TAC
+等学术期刊以及
+ICML
+、
+NeurIPS
+等国际会议上发表多篇高水平研究成果。

@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            color: #B0BEC5;
+            display: table;
+            font-weight: 100;
+            background-color: #edf5ff;
+        }
+
+        .container {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .content {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .title {
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+        /*包含以下五种的链接*/
+        a {
+            text-decoration: none;
+            color: #B0BEC5;
+        }
+        /*正常的未被访问过的链接*/
+        a:link {
+            text-decoration: none;
+        }
+        /*已经访问过的链接*/
+        a:visited {
+            text-decoration: none;
+        }
+        /*鼠标划过(停留)的链接*/
+        a:hover {
+            text-decoration: none;
+        }
+        /* 正在点击的链接，鼠标在元素上按下还没有松开*/
+        a:active {
+            text-decoration: none;
+        }
+        /* 获得焦点的时候 鼠标松开时显示的颜色*/
+        a:focus {
+            text-decoration: none;
+        }
+        .foot{
+            position: absolute;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="title">404 很抱歉，您查看的页面找不到了！</div>
+        <div ><a href="/">返回首页</a></div>
+    </div>
+    <div class="foot">
+        <img width="100%" src="/static/img/page-bg.jpg">
+    </div>
+</div>
+</body>
+</html>

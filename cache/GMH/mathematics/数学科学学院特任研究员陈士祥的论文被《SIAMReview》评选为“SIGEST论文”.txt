@@ -1,0 +1,75 @@
+近日，数学科学学院特任研究员陈士祥在博士期间发表的论文“
+Proximal Gradient Method for Nonsmooth Optimization over the Stiefel Manifold”, 
+被 
+SIAM Review
+期刊评选为“
+SIGEST
+专栏论文”，并应邀在
+2024
+年第
+2
+期的
+SIAM Review
+上重新刊登。
+***
+关于
+SIAM Review
+与
+SIGEST
+奖
+***
+SIAM Review
+是美国工业与应用数学会 
+(SIAM) 
+的旗舰期刊，每年只发表四期，每期仅刊登一篇“
+SIGEST
+论文”，旨在让更多的读者关注近期发表在
+SIAM
+各专业刊物中具有“普遍兴趣的杰出论文 
+(outstanding paper of general interest) ”
+。这些论文是从
+SIAM
+的
+17
+个专业期刊中精选出来的，经由各专业期刊编委会提名推荐，最终由
+SIAM Review
+的编委会评选产生。因此，各个
+SIAM
+专业期刊大概四年左右选出一篇“
+SIGEST
+论文”。
+SIAM
+将“
+SIGEST
+论文”视为一项奖励，每年在
+SIAM News
+上公布获奖论文及作者名单。 
+***
+关于获奖文章介绍
+***
+陈士祥的获奖论文题为“
+Proximal Gradient Method for Nonsmooth Optimization over the Stiefel Manifold”
+，于
+2020
+年发表于
+SIAM Journal on Optimization
+期刊上。这篇论文是他博士期间的工作，与他在香港中文大学的博士生导师马士谦教授（现任职莱斯大学）、苏文藻教授，以及伊利诺大学香槟分校张潼教授合作完成的。论文提出了在
+Stiefel
+流形上首个非光滑优化的近端梯度方法，为该领域带来了新的理论和实用算法。这也是中科大在
+SIAM Review 
+上发表的极少数论文之一。此前，尚无最优化领域的大陆学者获得这一殊荣。
+陈士祥特任研究员于
+2023
+年
+5
+月加入我校数学科学学院“数字技术的数学基础与应用”教育部重点实验室，专注于最优化算法和理论分析方向的研究。他的多项研究成果已发表在
+SIAM Journal on Optimization
+、
+IEEE Transactions on Automatic Control
+、
+IEEE Transactions on Signal Processing
+等顶级期刊，以及
+ICML
+、
+NeurIPS
+等国际顶级机器学习会议上。

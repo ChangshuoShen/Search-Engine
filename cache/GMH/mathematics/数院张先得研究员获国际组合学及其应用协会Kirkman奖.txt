@@ -1,0 +1,118 @@
+2016
+年
+11
+月
+22
+日
+，国际组织
+ICA
+（
+Instituteof Combinatorics and its Applications
+，国际组合学及其应用协会）公布了该协会
+2011-2013
+年度的各奖项。我院张先得研究员荣获
+2012
+年度
+Kirkman
+奖。
+ ICA
+对张先得研究员的获奖评语：
+Xiande Zhang’s research is incombinatorial design theory and its applications to bioinformatics, networks,database theory and coding theory. She had published 16 papers in mathematicsand engineering journals, with a further twopapers submitted to journals andtwo submitted to conference proceedings. Her nominators describe “an excellentdiscrete mathematician positioned in the top class of young combinatorialists”,who is “versatile, insightful, dedicated, productive and highly talented”. 
+ 
+国际组织
+ICA
+成立于
+1990
+年，地址设在加拿大滑铁卢大学。该组织从
+1993
+年开始每年颁发
+Euler
+奖、
+Hall
+奖和
+Kirkman
+奖三种奖项，其中
+Euler
+奖是终身成就奖，
+Hall
+奖和
+Kirkman
+奖分别授予年龄不超过四十岁和博士毕业不超过四年的杰出青年学者。
+2010
+年，
+ICA 
+主席
+ RalphStanton 
+去世，这
+3
+项奖的颁发
+被暂时搁置
+。
+2016
+年
+ICA
+决定补发
+3
+种奖，并新设立
+Stanton
+奖（面向
+ICA
+成员的终身教育成就奖）。 
+ 
+目前为止，我国有
+4
+位学者获得
+ICA
+各奖项，其中苏州大学朱烈教授获得
+2004
+年
+Euler
+奖，浙江大学葛根年教授（我院兼职教授）获得
+2006
+年
+Hall
+奖，浙江大学冯涛研究员与我院张先得研究员分别获得
+2011
+年和
+2012
+年
+Kirkman
+奖。
+  张先得研究员简介：
+2009
+年获浙江大学博士学位（导师葛根年教授），
+2009
+年
+7
+月至
+2016
+年
+2
+月分别在新加坡南洋理工大学和澳大利亚莫纳什大学做博士后研究，
+2016
+年
+3
+月受聘中国科学技术大学特任研究员。从事的研究工作主要是组合设计理论及其在编码，密码，计算机，生物信息和统计等热门领域的应用；在
+European J. Combinatorics
+，
+J. AlgebraicCombinatorics
+，
+IEEE Trans. Information Theory, SIAM J.Discrete Mathematics, J. Combinatorial Designs
+，
+DesignsCodes and Cryptography 
+等组合设计、编码、密码领域国际最高级别学术刊物上共发表学术论文
+30
+多篇；在一些推动现代组合设计发展的核心问题上，提出重要研究方法并获得一些重大创新成果，如提出多种递归构造方法并彻底解决了可分解的可分组
+3-
+设计的存在性和若干类型相关设计的存在性问题；通过构造具有受限拉丁横截的拉丁方，实质性的推进了拉丁方理论中的
+Ryser
+猜想和
+ Brualdi 
+猜想的证明；巧妙利用组合学工具解决各种不同信道下常重码、防诬陷码、列表译码等的编码问题；数据存储中
+Armstrong 
+码和
+ Enomoto-Katona 
+码等的编码问题。
+
+相关链接：
+https://en.wikipedia.org/wiki/Institute_of_Combinatorics_and_its_Applications

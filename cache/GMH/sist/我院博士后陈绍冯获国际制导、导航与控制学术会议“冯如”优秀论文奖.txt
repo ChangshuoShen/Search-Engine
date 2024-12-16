@@ -1,0 +1,40 @@
+2022
+年
+8
+月
+5
+日
+-8
+月
+7
+日，
+2022
+国际制导、导航与控制学术会议
+(2022 International Conference on Guidance, Navigation and Control
+，简称
+ICGNC2022)
+在黑龙江哈尔滨举办
+,
+我院博士后
+陈绍冯与康宇教授、赵云波教授和曹洋副教授的合作论文“
+Spectrally Normalized Adaptive Neural Identifier for Dynamic Modeling and Trajectory Tracking Control of Unmanned Aerial Vehicle”
+荣
+获
+ICGNC2022“
+冯如”优秀论文奖
+(FENG Ru Best Paper Award)
+。
+获奖论文针对无人机动力学建模问题，从隐藏状态角度出发，提出了适应性强、响应速度快、稳定性高的谱归一化约束自适应辨识器，并以此为基础设计了轨迹跟踪控制器，为无人机空中作业能力的提升提供了新方案。
+国际制导、导航与控制学术会议是目前中国最大的航空、航天、航海、陆地等运动体制导、导航与控制领域的国际学术会议，每两年举办一次，已经成功举办
+10
+届。本次大会收到来自
+15
+个国家和地区的投稿论文，共有
+710
+篇英文论文、
+295
+篇中文论文和
+3
+篇摘要论文被录用。
+“冯如”优秀论文奖
+旨在奖励在校的优秀学生，鼓励国内外更多的青年人投身于制导、导航与控制的前沿性学术研究和关键性技术创新。

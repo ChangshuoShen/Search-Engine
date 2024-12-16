@@ -1,0 +1,15 @@
+近日，我院国家数学与交叉科学中心（合肥）图形与几何计算实验室（
+http://gcl.ustc.edu.cn
+）的研究组在几何信息压缩感知理论及应用领域取得了重要研究进展，相关研究成果全文发表在计算机图形学领域唯一的一区期刊ACM Transactions on Graphics (TOG) 上。该期刊主页(
+http://tog.acm.org/
+)显示，ACM TOG是计算机图形学领域最重要的同行评审期刊；根据2006年汤姆森科技期刊的影响因子分析，ACM TOG是82个收录的软件类期刊中被引用最高的期刊。
+Ruimin Wang, Zhouwang Yang, Ligang Liu, Jiansong Deng, and Falai Chen. Decoupling noise and features via weighted l_1-analysis compressed sensing. ACM Transactions on Graphics, 33(2). Article 18:1-12, March 2014. DOI: 
+http://dx.doi.org/10.1145/2557449
+
+
+
+在论文中，研究组发现并利用几何特征在某些算子作用下的稀疏性，构建了几何信息压缩感知模型，从而实现在噪音数据中恢复三维几何模型，并从统计理论上证明它是对真实几何模型的渐近最优逼近。这是第一次将压缩感知的理论引进并应用到几何处理中。审稿人给予该论文很高的评价，认为“文中所提方法是全新的，并将对其他研究工作者有很大的促进作用”。论文受邀将于今年8月份在加拿大召开的SIGGRAPH会议（计算机图形学的世界顶级学术会议）上进行宣讲。（注：到目前为止，这是TOG上以科大为唯一单位发表的第一篇论文，另据查以大陆地区科研机构为唯一单位发表的TOG论文共有7篇）。
+论文的第一作者为我校数学院一年级博士生王睿�，通讯作者为我校数学院杨周旺副教授，我校是该论文的唯一完成单位。
+此工作得到了科技部973项目和国家自然科学基金的支持。
+附论文主页：
+http://staff.ustc.edu.cn/~lgliu/Projects/2014_DecouplingNoise/default.htm
