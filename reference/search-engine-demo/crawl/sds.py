@@ -6,10 +6,10 @@ class DSCrawler(Crawler):
         self.name = '大数据学院官网'
         super().__init__(self.name, args)
         
-        self.main_url = 'https://sds.ustc.edu.cn/'
-        self.main_page = 'https://sds.ustc.edu.cn/main.htm'
+        self.main_url = 'https://saids.ustc.edu.cn/'
+        self.main_page = 'https://saids.ustc.edu.cn/main.htm'
         # self.src_store_url = ['http://sds.ustc.edu.cn/15410/list.htm']
-        self.src_store_url = ['https://sds.ustc.edu.cn/15443/list.htm', 'http://sds.ustc.edu.cn/15410/list.htm']
+        self.src_store_url = ['https://saids.ustc.edu.cn/15443/list.htm', 'http://sds.ustc.edu.cn/15410/list.htm']
         self.page_url = [url[:-4] + '{id}' + url[-4:] for url in self.src_store_url]
         self.page_num_xpath = "//em[@class='all_pages']"
 
