@@ -8,8 +8,8 @@ class DSCrawler(Crawler):
         
         self.main_url = 'https://saids.ustc.edu.cn/'
         self.main_page = 'https://saids.ustc.edu.cn/main.htm'
-        # self.src_store_url = ['http://sds.ustc.edu.cn/15410/list.htm']
-        self.src_store_url = ['https://saids.ustc.edu.cn/15443/list.htm', 'http://sds.ustc.edu.cn/15410/list.htm']
+        # self.src_store_url = ['http://saids.ustc.edu.cn/15410/list.htm']
+        self.src_store_url = ['https://saids.ustc.edu.cn/15443/list.htm', 'http://saids.ustc.edu.cn/15410/list.htm']
         self.page_url = [url[:-4] + '{id}' + url[-4:] for url in self.src_store_url]
         self.page_num_xpath = "//em[@class='all_pages']"
 
@@ -59,4 +59,4 @@ if __name__ == '__main__':
     args = get_args()
     
     dc = DSCrawler(args)
-    dc.crawl_src(save_path='../cache/sds', host_url=dc.main_url)
+    dc.crawl_src(save_path='../cache/saids', host_url=dc.main_url)

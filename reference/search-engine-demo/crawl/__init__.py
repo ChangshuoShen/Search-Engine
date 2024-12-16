@@ -2,7 +2,7 @@ from .grad import GradCrawler
 from .mathematics import MathCrawler
 from .press import PressCrawler
 from .scs import SCSCrawler
-from .sds import DSCrawler
+from .saids import DSCrawler
 from .sist import SISTCrawler
 from .sse import SSECrawler
 from .teach import TeachCrawler
@@ -12,7 +12,7 @@ NAME_TO_CRAWLER = dict([
     ('teach', TeachCrawler),
     ('sse', SSECrawler),
     ('sist', SISTCrawler),
-    ('sds', DSCrawler),
+    ('saids', DSCrawler),
     ('scs', SCSCrawler),
     ('press', PressCrawler),
     ('mathematics', MathCrawler),
