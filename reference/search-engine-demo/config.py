@@ -5,7 +5,7 @@ from typing import Tuple
 class CrawlerConfig:
     use_hbase: bool = False
     multi_threads: bool = True
-    crawlers: Tuple[str] = ('teach', 'sse', 'sist', 'sds', 'scs', 'press', 'mathematics', 'grad')
+    crawlers: Tuple[str] = ('teach', 'sse', 'sist', 'saids', 'scs', 'press', 'mathematics', 'grad')
     save_dir: str = "./cache"
     # demo: bool = True
     # verbose: bool = True
