@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Access Denied From Outside Ustc Network</title>
+<style type="text/css">
+.title {
+	font-size:24px;
+	font-weight:bold;
+	color:#663333;
+}
+</style>
+</head>
+
+<body>
+<center class="title">限制校内访问/Access Denied From Outside Ustc Network</center>
+<p/>
+<center class="title">您访问的网页只允许从中国科学技术大学校园网访问</center>
+<p/>
+<center>We are sorry， you are denied to access this URL from outside ustc network</center>
+<p/>
+<center>请单击<a href=http://revproxy.ustc.edu.cn:8000/yourip.php>这里</a>获取您的IP信息</center><p/>
+<center>如果您在中国科大校内上网，出现本页提示，请检查浏览器是否使用了代理服务器</center><p/>
+<center>如有问题请联系<a href=http://ustcnet.ustc.edu.cn>中国科学技术大学网络信息中心</a></center>
+</body>
+</html>
