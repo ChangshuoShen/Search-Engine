@@ -1,0 +1,19 @@
+报告题目：
+Gene Regulation by Bacterial Small RNA and RNA Chaperone Hfq
+报告人：
+Jingyi Fei
+（
+Department of Biochemistry and Molecular Biology, Institute for Biophysical Dynamics, University of Chicago.
+）
+时间：
+12
+月
+18
+日下午
+3:00-4:00
+，
+地点：生命学院
+429
+会议室
+报告简介：
+To cope with changes in both natural and host environments, microbes have evolved diverse mechanisms for stress response. Bacterial small RNAs (sRNAs) are employed as a prevalent strategy for gene regulation by microbes to fire stress response. The most common strategy for sRNA to regulate gene expression is through base pairing with target mRNAs and thereby affecting translation efficiency and/or mRNA stability. The RNA chaperone, Hfq, plays key roles in sRNA-mediated regulation. Using imaging-based analysis, we have broadly characterized sRNA regulation at different stages during the lifetime of the target mRNA, and demonstrated the possibility that that sRNA can effectively regulate mRNA co-transcriptionally, rather than just post-transcriptionally. Using single-particular tracking, we have further characterized the dynamic interactions between Hfq and cellular RNAs. Our results shed lights on how Hfq, as one of the major bacterial RNA binding proteins, changes its major RNA binding partners and associated functions under different cellular environments.

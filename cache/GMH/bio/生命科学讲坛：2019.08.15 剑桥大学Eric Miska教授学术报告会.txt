@@ -1,0 +1,53 @@
+报告题目：
+RNA: from structure and chemical modification to new functions
+ 
+报告人：
+Eric Miska
+教授（剑桥大学，
+Gurdon Institute
+，
+Wellcome Sanger Institute
+）
+报告地点：科大西区生命科学学院
+429
+会议室
+报告时间：
+2019
+年
+8
+月
+15
+日上午
+10
+：
+00-11
+：
+30am
+报告人简介：
+Eric Miska
+教授是
+Gurdon Institute
+副所长，剑桥大学教授，
+Wellcome Sanger Institute
+研究员。
+Miska
+教授
+1996
+年在都柏林大学获得本科学位，
+2000
+年在剑桥大学获得
+Ph.D
+，
+2000-2005
+年，
+Miska
+在
+MIT
+从事博士后研究。
+Miska
+教授在非编码小
+RNA
+领域做出了很多杰出的工作。并获得多项国际大奖。
+ 
+Abstract: 
+The genome is transcribed into RNA. Some RNA encodes protein. More RNA acts directly in the control of gene expression. My group is studying such RNA control mechanisms. To do this we are using a variety of tools from chemical biology to cell biology and from computation to animal genetics. Recent work has focussed on (i) in vivo RNA structure determination, (ii) RNA modification of tRNA and mRNA as a new layer of control, (iii) RNA and transposon control and (iv) RNA-mediated inheritance. While our work is of a fundamental nature it impinges on human disease such as viral infection, metabolic disease and cancer. I will present unpublished work from the group.

@@ -1,0 +1,82 @@
+报告主题：
+Interrogating Cysteine-Mediated Redox Regulation with Chemoproteomics 
+报告人：
+ 
+杨靖研究员（国家蛋白质科学中心•北京，军事医学研究院生命组学研究所）
+邀请人
+: 
+王毅研究员
+时
+  
+间
+ 
+：
+2020
+年
+11
+月
+6
+日下午
+14
+：
+00
+地
+  
+点
+ 
+：科大西区生科院
+531
+会议室
+研究方向和成果：近五年来针对蛋白质半胱氨酸残基的三种主要氧还形态，发展了高选择性的生物正交化学探针，结合探针标记肽段富集、鉴定与定量技术，在蛋白质组层面上实现了氧还修饰的全面定位与氧还转换的精准测量。这些工作不仅为氧化还原生物学研究提供了高质量的数据资源，而且能用于直接解析巯基氧还调控网络中的关键节点。先后主持国家自然科学基金优秀青年基金
+1
+项，面上项目
+3
+项，青年科学基金
+1
+项、北京市自然科学基金面上项目
+1
+项、国家重点实验室自主研究课题基金
+2
+项、作为学术骨干参与国家重点研发项目
+1
+项，并且入选北京市特聘专家、北京市科技新星和北京市青年拔尖人才。近五年来，在
+Nat Chem Biol
+、
+Nat Cell Biol
+、
+Nat Protoc
+、
+Nat Commun
+、
+Cell Host Microbe
+、
+Cell Chem Biol
+、
+P Natl Acad Sci USA
+、
+J Am Chem Soc
+等期刊上发表论文
+20
+篇。分别受邀为
+Nat Chem Biol
+和
+Mol Cell Proteomics 
+撰写评述（
+News & Views
+）或综述，同时也是
+Nat Chem Biol
+、
+Nat Commun
+等近
+20
+种高水平期刊的审稿人。多次受邀作为报告人参加国内外著名学术会议，如香山科学会议、
+HUPO
+、
+GRC
+、
+EMBO Workshop
+、
+Keystone Symposia
+等。
+报告摘要：
+The sulfur atom of cysteine exhibits distinct chemical properties, which can assume many different redox states. Redox changes on cysteine residues can reversibly alter protein functions, representing a crucial mechanism in cellular regulation and signaling. Dysregulation of cysteine-mediated redox network is believed to be associated with aging and diseases. However, efforts to understand their functional roles in physiology and pathophysiology have been hampered due to limitations of methods for globally analyzing site-specific protein targets and redox dynamics. We developed several site-centric quantitative chemoproteomic approaches to systematically profile three distinct types of cysteine redox forms (-SH, -SOH and SO2H) in complex proteomes. These analyses afford discovery of novel redox mechanisms of several proteins with key biological functions, and greatly expand the substrate spectrum of many functionally important reducing systems.

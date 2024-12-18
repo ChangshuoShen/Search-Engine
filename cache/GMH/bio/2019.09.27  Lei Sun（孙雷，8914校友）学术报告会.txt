@@ -1,0 +1,30 @@
+报告题目
+: Single Molecule DNA Sequencing
+：
+A Quest of Research and Commercialization
+报告人
+: Lei Sun
+（孙雷，
+8914
+校友）
+, CTO of Genemind Biosciences (
+真迈生物
+)
+地点：
+329A
+时间：
+ 9
+月
+27
+日下午
+3
+点
+报告人简介：
+Mr. Lei Sun studied Material Science from University of Science & Technology of China and earned MS in polymer chemistry from Case Western Reserve University. After that he spent more than 20 years in US, working on many fields of biotech industry. He co-developed FRET dye DNA sequencing kit for the human genome sequencing project at Amersham Pharmacia Biotech, then moved to GE healthcare and developed Codelink gene expression DNA microarray. In 2002, Mr. Sun became lead of nanoparticle research at Intel’s Corporate Technology Group and created tissue analysis assays and cell imaging methods using SERS labels. From 2007 to 2018, he joined single molecule sequencing company Pacific Biosciences, led surface chemistry and SMRTcell chip development. His work was instrumental to the RS and SEQUEL sequencing system and yielded more than 20 patents through the years.
+报告摘要: Single molecule DNA sequencing has been an important step in sequencing technology development. Different technologies were developed over the past two decade. Three technologies particularly are now commercially available, each with their unique characteristics: (i) Single molecule real time (SMRT) sequencing technology from Pacific Biosciences (Pacbio) based on ZMW structure and phosphor-linked nucleotides; (ii) Nanopore sequencing from Oxford Nanopore Technologies (ONT), featuring electrical detection and point-of-care test capability. (iii) True single molecule sequencing (tSMS) from Genemind Biosciences, armed with total internal reflection fluorescence (TIRF) optics and reversible terminator nucleotides. The three technologies each went through challenging research and development, but even more demanding productization effort, yielding sequencers including RS
+，
+ Sequel
+，
+ Minion
+，
+and Genocare. In this talk, our path from research to commercialization will be discussed.

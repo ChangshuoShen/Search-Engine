@@ -1,0 +1,25 @@
+题目：
+Reading out histone marks: mechanisms and consequences
+报告人：张祎博士
+ 
+University of Colorado Anschutz Medical Campus
+ 
+博士后
+地点：生命科学楼
+ 
+429
+ 
+会议室
+时间：
+2019
+年
+12
+月
+25
+日
+ 
+下午
+14:30
+ 
+报告摘要
+Recognition of epigenetic marks or post-translational modifications (PTMs) in histones by protein domains, known as readers, is required for a broad range of cellular events. Binding of readers to their cognate histone PTMs helps to define the place and timing for where the host proteins are recruited or stabilized within the genome. Reader domains are rarely present as single modules in proteins and more often function in combination with other readers or writer domains. Here, I will discuss our studies of epigenetic reader domains and the biological consequences of reading out histone marks.

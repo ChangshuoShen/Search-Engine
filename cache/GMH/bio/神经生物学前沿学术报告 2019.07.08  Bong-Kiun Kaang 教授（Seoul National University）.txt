@@ -1,0 +1,29 @@
+神经生物学前沿学术报告
+报告题目
+:
+Memory and Hebbian Synapses
+报告人
+:   
+Bong-Kiun Kaang, Ph.D
+National Honor Scientist
+Fellow of the Korean Academy of Science & Technology
+Chair, APRC, International Brain Research Organization (IBRO)
+Professor, School of Biological Sciences
+Seoul National University
+时间：
+    2019
+年
+7
+月
+8
+日（周一），下午：
+14:30-15:30
+地点：
+西区生物楼
+429
+会议室
+主办单位：中国科学院脑功能与脑疾病重点实验室
+中国科学技术大学生命科学学院
+合肥微尺度物质科学国家研究中心集成影像中心
+报告简介：
+Learning is the process by which we obtain the information about the world; memory is the process by which that information is stored. About 100 years ago, Richard Semon coined engram or memory trace that is defined as the lasting physical changes in the brain that occur as a result of an experience. D.O. Hebb who was searching for engram, proposed an idea of cell assembly and Hebbian synaptic plasticity, in 1949. Now it became possible to identify and label engram cells by powerful molecular biological tools and optogenetics. However, we do not know whether memory formation strengthens synapses between engram cells in different brain regions. So, we asked if memory formation strengthens synapses between engram cells, structurally and functionally. In this talk, I will present our recent structural and functional approaches to reveal enhanced structural and functional connectivity between engram cells in the hippocampus during memory formation. Our data demonstrated that enhanced structural and functional connectivity between engram cells across two directly connected brain regions in the hippocampus forms the synaptic correlate for memory formation as was prophesied by D.O. Hebb.

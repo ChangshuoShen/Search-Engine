@@ -1,0 +1,62 @@
+题目： 
+Imaging Neuronal Circuits with Tissue Clearing
+ 
+报告人：
+Takeshi Imai (Kyushu University)
+ 
+报告时间：
+2019.10.9 
+上午
+9
+：
+30-10
+：
+30
+ 
+ 
+报告地点：生物楼
+531
+会议室
+ 
+报告摘要：
+Neurons in the brain communicate with each other at synapses. A typical pyramidal neuron in the brain receives inputs from >10,000 synapses. Many of the excitatory synapses are formed at a small protrusion of dendrites, known as dendritic spines. However, their distribution on a whole-neuron scale has not been fully established due to technical limitations. We previously developed a tissue clearing agent, SeeDB2, which is optimized for high-resolution fluorescence imaging. The refractive index of SeeDB2 is matched to that of immersion oil (1.518), allowing for volume imaging with high-NA oil-immersion objective lenses with minimal spherical aberrations. Combined with Airyscan microscopy, our strategy allows for large-scale analyses with a constant spatial resolution of ~150 nm in 
+x-y
+ and ~300 nm in 
+z
+, which is sufficient to quantify the number and size of dendritic spines unambiguously. Here we performed comprehensive high-resolution mapping of dendritic spines in layer 5 cortical pyramidal neurons in mice, and found that the spine density is highly biased along apical dendrites, forming a spine density “hotspot”. The spine density at the hotspot increased during adolescence, when other parts of the dendrites underwent a moderate reduction. Thus, the spine density is dynamically controlled during adolescence to form mature cortical circuits.
+ 
+报告人简介：
+Imai
+教授
+2001
+年本科毕业于日本东京大学生物物理与生物化学系，于
+2006
+年获得东京大学生物物理与生物化学专业博士学位，先后在
+Japan Science and Technology Agency
+，
+RIKEN Center for Developmental Biology
+，
+Kyoto University
+等著名研究机构开展科研工作，于
+2017
+年起，任九州大学医学院全职教授。
+Imai
+教授长期从事气味识别和嗅球神经环路的研究，在
+Science
+、
+Cell
+、
+Na
+ture
+ 
+Neuroscience
+、
+Neuron
+等顶级权威杂志发表多篇学术论文，曾获日本先驱科学学会博士研究生奖、
+Science
+/
+AAAS
+ 
+青年生命科学家奖和日本
+MEXT
+青年科学家奖。

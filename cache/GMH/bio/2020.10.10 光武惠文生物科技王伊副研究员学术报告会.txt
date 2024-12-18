@@ -1,0 +1,63 @@
+报告题目
+1: 
+ 
+Shoot for the moon, landed on Mars: the mechanistic study of neuroprotective peptide CN-105
+报告题目
+2: 
+ 
+Scalable production of therapeutic exosomes: progress and challenges
+ 
+报
+ 
+告
+ 
+人：王伊
+ 
+副研究员，光武惠文生物科技（北京）有限公司
+ Excerene Biosciences Co. Ltd.
+邀
+ 
+请
+ 
+人：周丛照教授
+报告时间：
+2020
+年
+10
+月
+10
+日（周一）上午
+ 10
+：
+00 - 12
+：
+00
+报告地点：生物楼329A会议室
+报告人简介：王伊副研究员本科于
+2006
+年毕业于中国科学技术大学生命科学学院，随后在美国
+Duke University
+生物化学系学习并取得博士学位。他在
+Duke
+就读期间参与了新型脑卒中治疗药物
+CN-105
+的研发工作。回国后，王伊博士先后在中科院生物物理所、军事医学研究院、蛋白质药物国家工程研究中心工作，并于
+2018
+年
+10
+月创立
+Excerene Biosciences Co. Ltd, 
+基于干细胞外泌体技术和
+AI
+药物设计技术开发新型治疗药物。目前已有两个新药品种获得
+IND
+，研究发表在《
+JACS
+》、《
+Small
+》、《
+Sensors and Actuators B
+》等期刊上。
+报告简介
+: 
+1) CN-105 is a clinical-stage neuroprotective drug that is being evaluated in several clinical trials of intracranial hemorrhage and ischemic stroke in China, US and Singapore. The drug was initially designed as an ApoE-mimetic peptide, while its true mechanism of action remains elusive. Not until recently have we zeroed in the molecular target of CN-105. Here we recapitulate a 7-yr target identification study of CN-105, and share the lessons learned along the way. 2) Extracellular vesicle (EV), especially exosome, is a unique type of natural nanoparticle that posesses great promises in both targeted drug delivery and cell-free cell therapy. It has become a field of intensive research and a hot spot for venture capitals. One limitation of current technology of therapeutic exosome is a lack of scalability and compatibility with current GMP production facility of biological drugs. At Excerene Biosciences, we are striving to develop a scalable and GMP-compatible manufacture process of therapeutic exosomes from both cell culture supernatant and bovine milk. Here we report current progress and challenges in this field.

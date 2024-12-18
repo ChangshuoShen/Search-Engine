@@ -1,0 +1,30 @@
+报告题目：
+Hyperactivities in PFC circuit neurons in an awaking Parkinsonian mouse 
+报告人：
+ 
+周专
+ 
+教授
+报告时间：
+8
+月
+14
+日
+10:00-11:00
+报告地点：生物楼
+429
+会议室
+邀请人：
+ 
+唐爱辉
+报告摘要：
+The loss-of-function mutation in PARK7/DJ-1 is one of the most common causes of autosomal recessive Parkinson’s disease, and patients carrying PARK7 mutations often exhibit both a progressive movement disorder and emotional impairment, such as anxiety. However, the causes of the emotional symptom accompanying PARK7-associated and other forms of Parkinson’s disease remain largely unexplored. Using two-photon microscopic Ca2+ imaging in awake PARK7-/- and PARK7+/+ mice, we found that (1) PARK7-/- neurons in the frontal association cortex showed substantially higher circuit activity recorded as spontaneous somatic Ca2+ signals; (2) both basal and evoked dopamine release remained intact, as determined by both electrochemical dopamine recordings and high performance liquid chromatography in vivo; (3) 
+D2 receptor
+ expression was significantly decreased in post-synaptic frontal association cortical neurons, and the hyper-neuronal activity were rescued by D2 receptor intervention using either local pharmacology or viral D2 receptor over-expression; and (4) PARK7-/- mice showed anxiety-like behaviors, which were rescued by either local D2 receptor pharmacology or overexpression. Thus, for first time, we demonstrated a robust D2 receptor-dependent phenotype of individual neurons within the prefrontal cortex circuit in awake Parkinsonian mice that linked with anxiety. Our work s
+heds light on early-onset phenotypes and the mechanisms underlying Parkinson’s disease
+ by imaging brain circuits in an awake mouse model.
+报告人简介：周专教授，北京大学分子医学研究所细胞生物物理实验室主任。
+1990
+年于华中科技大学获得博士学位后在德国马普生物物理化学研究所从事博士后研究，之后分别在美国华盛顿大学、芝加哥
+Loyola
+大学、华中科技大学、中国科技大学和上海中科院神经所等知名研究机构担任教职。周老师结合膜片钳、膜电容、微碳纤电极以及共聚焦、多光子荧光显微成像等手段，在活体、组织、单细胞水平对细胞分泌过程及其与相关疾病的关系有长期系统的研究，已发表相关论文一百多篇。

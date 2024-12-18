@@ -1,0 +1,48 @@
+报告题目：
+Understanding epigenetics in a protein family approach and its application to drug development
+报告人： 闵金荣 
+ 
+教授
+报告时间：
+12
+月
+27
+日
+10:00-11:00
+报告地点：生物楼
+531
+会议室
+邀请人： 许超 教授
+报告摘要：
+The basic subunit of chromatin is the nucleosome, consisting of 147 base pairs of DNA wrapped around an octamer of core histone proteins. Both histones and DNA can be modified, and these chromatin modifications are dynamic. Chromatin-modifying enzymes (“writer” and “eraser”) and modification recognition proteins (“reader”) comprise the main components of chromatin signalling. Chromatin signalling is a complex system of communications that governs activities of nuclear proteins and actively regulates gene expression plus many other key biological processes. Dysregulation of chromatin signalling can result in pathogenesis of cancers and other genetic diseases.My laboratory uses the technique of structural biology in combination with other biochemical and biophysical methods to systematically study epigenetic proteins in a protein family approach in order to understand the specificity/selectivity, and division of labor in the cell of these epigenetic protein families, and this piece of information would be essential in designing target-specific drugs and annotating the potential functions of those function-unknown proteins. In this talk, I am going to present some examples on how we characterize methylation “reader” protein families using this approach and its application to the development of chemical probes and medicines.
+报告人简介：闵金荣，多伦多大学结构基因组中心（
+SGC
+）
+PI
+，生理学系教授。博士毕业于中国科学院物理研究所，其后在德国（洪堡学者）、欧洲癌症研究所、美国冷泉港实验室等从事博士后研究，于
+2005
+年起就职于多伦多大学。主要应用分子生物学、化学生物学和结构生物学手段研究表观遗传修饰调控有关的生物大分子结构和功能，目前已经解析
+300
+多个蛋白质晶体结构，并结合其它生化和生物物理手段研究了其在人类疾病中的作用和功能。已在
+Cell
+，
+Nature Chemical Biology
+，
+Nature Structural & Molecular Biology
+，
+Nature communications
+，
+Genes & Development
+，
+EMBO Journal, 
+和
+PNAS
+等国际主流期刊上发表百余篇相关研究论文，总引用近
+9000
+次，
+H
+指数
+44
+（
+Google scholar)
+。

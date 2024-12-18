@@ -1,0 +1,21 @@
+题目：
+Structure of the inner kinetochore CCAN complex assembled onto a centromeric nucleosome 
+报告人：闫凯歌博士
+ MRC Laboratory of Molecular Biology
+，
+Investigator Scientist
+时间：
+ 2020
+年
+1
+月
+8
+日
+ 14:30
+地点：生命科学楼
+531
+会议室
+ 
+Abstract:Kinetochores are large protein complexes that attach chromosomes, through their centromeres, to the mitotic spindle. By assembling onto the specialized centromeric Cenp-A nucleosome, kinetochores provide load-bearing structures for microtubule-mediated chromosome segregation in mitosis. The inner and outer kinetochores are responsible for interacting with centromeric chromatin and microtubules, respectively. We have reconstituted the inner kinetochore onto a specialised Cenp-A nucleosome. I will describe the cryo-EM structure of the S. cerevisiae inner kinetochore 14-subunit CCAN complex assembled onto a Cenp-A nucleosome. The structure explains the inter-dependency of CCAN constituent sub-complexes and how the inner kinetochore interacts with the octameric Cenp-A nucleosome. The CCAN
+–
+Cenp-A structure provides a framework for understanding how kinetochores link centromeres to microtubules for chromosome segregation.
