@@ -14,7 +14,7 @@ urls = [
 base_url = 'https://ustcnet.ustc.edu.cn'
 
 # 目标保存路径
-save_path = 'test/net'
+save_path = 'cache/GMH/net'
 os.makedirs(save_path, exist_ok=True)
 
 def fetch_page(url):
