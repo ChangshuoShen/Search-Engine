@@ -49,11 +49,11 @@ by 申长硕 & 高茂航
 |                  | 核科学技术学院             | https://www.snst.ustc.edu.cn           |
 |                  | 科技商学院                 | https://fbs.ustc.edu.cn                |
 |                  | 科学岛分院                 | https://www.hf.cas.cn/sbpy/yjsc/       |
-|                  | 材料科学与工程学院（科教融合学院） | https://www.gs.imr.ac.cn           |
-|                  | 天文与空间科学学院（科教融合学院） | https://www.pmo.cas.cn/gs           |
-|                  | 纳米技术与纳米仿生学院（科教融合学院） | https://yjsb.sinano.ac.cn        |
+|                  | 材料科学与工程学院（科教融合学院） | https://gs.imr.ac.cn           |
+|                  | 天文与空间科学学院（科教融合学院） | https://pmo.cas.cn/gs           |
+|                  | 纳米技术与纳米仿生学院（科教融合学院） | http://nsti.ustc.edu.cn/main.htm        |
 |                  | 应用化学与工程学院（科教融合学院） | https://www.ciac.cas.cn            |
-|                  | 生物医学工程学院（苏州）（科教融合学院） | https://www.sibet.ac.cn         |
+|                  | 生物医学工程学院（苏州）（科教融合学院） | http://bme.ustc.edu.cn    |
 |                  | 能源科学与技术学院（科教融合学院） | https://www.giec.ac.cn             |
 |                  | 稀土学院（科教融合学院）   | https://www.gia.cas.cn                |
 | **招生与培养**     | 中科大本科生招生网           | https://zsb.ustc.edu.cn/main.htm             |
