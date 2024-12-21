@@ -1,0 +1,864 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="/images/favicon.ico" />
+	<link rel="bookmark" href="/images/favicon.ico" type="image/x-icon" />
+	<title id="title">中国科学技术大学统一身份认证系统</title>
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" type="text/css" href="https://passport.ustc.edu.cn/css/ie7.css" />
+	<script src="https://passport.ustc.edu.cn/js/json2.js"></script>
+	<![endif]-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="https://passport.ustc.edu.cn/css/ie8.css" />
+	<![endif]-->
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="https://passport.ustc.edu.cn/css/ie.css" />
+	<![endif]-->
+	<!--ie 10 && 11 placeholder-->
+	<style>
+		@media all and (-ms-high-contrast:none)
+		{
+			.hide { color:#757575; } /* IE10 */
+			*::-ms-backdrop, .hide { color:#757575; } /* IE11 */
+		}
+	</style>
+	<!-- 页面黑白 -->
+	<!--<style type="text/css">
+    html {
+        filter: grayscale(100%); 
+        -webkit-filter: grayscale(100%); 
+        -moz-filter: grayscale(100%); 
+        -ms-filter: grayscale(100%); 
+        -o-filter: grayscale(100%); 
+        -webkit-filter: grayscale(1);
+    }
+</style>-->
+	 <script type="text/javascript" src="https://passport.ustc.edu.cn/js/jquery-3.4.1.min.js"></script>
+	 <script src="https://passport.ustc.edu.cn/js/json2.js"></script>
+	 <script src="https://passport.ustc.edu.cn/js/jquery-form.js"></script>
+<script src="https://passport.ustc.edu.cn/js/bootstrap.min.js"></script>
+<link href="https://passport.ustc.edu.cn/css/notice.css" rel="stylesheet">
+	 
+	 <!--JS/CSS 追加随机数,避免缓存  -->
+	 <script>
+	    var zhJson = 1733122090000;
+	    var enJson = 1733122090000;
+		document.write('<link href="https://passport.ustc.edu.cn/css/ucas.css?v='+1733122090000+'" rel="stylesheet" type="text/css"/>');
+		document.write("<s"+"cript type='text/javascript' src='https://passport.ustc.edu.cn/js/ucas.js?v=?"+1733122090000+"'></scr"+"ipt>");
+	</script>
+</head>
+<body class="no-margin">
+<div class="body-cell">
+	<div class="box" style="margin: 0 auto!important;">
+		
+		 <div class="qrcode" style="cursor:pointer;">
+			<img src="https://passport.ustc.edu.cn/images/qrcode.png" />
+		</div> 
+		<div class="input_login" style="cursor:pointer;">
+			<img src="https://passport.ustc.edu.cn/images/input_login.png" />
+		</div>
+		<div class="card" style="opacity:1">
+		<p id="scanTitle" style="font-size:20px;height: 43px;text-align: center">微信扫码登录</p>
+			<div id="header" style="text-align: center">
+			<input type="hidden" value="https://passport.ustc.edu.cn/" id="basePath"/>
+				<h1 class="header-logo">
+					<img id="header-img" src="https://passport.ustc.edu.cn/images/ucas/logo.svg" />
+				</h1>
+				<h1 class="header-des">
+					<img id="des-img" src="https://passport.ustc.edu.cn/images/ucas/des.svg" /> 
+				</h1>
+			</div>
+
+
+
+<div id="divQrCode" style="display: none; position: relative; height: 210px;text-align: center">
+	<div id="qrCode" style="position: absolute; left: 105px;width: 200px;">
+		<img src="" id="QrCodeImg"  style="width: 180px;height: 180px"/>
+	</div>
+	<div id="model" style="display: none; right: 35px; position: absolute; right: 0; ">
+		<img style="margin-top: 10px;width: 140px;" src="https://passport.ustc.edu.cn/images/model.png" id="ModelImg" />
+	</div>
+</div>
+
+<form class="loginForm form-style" style="height: 210px" method="post" action="/login" accept-charset="UTF-8">
+	<input type="hidden" name="model" value="uplogin.jsp" />
+	<input type="hidden" id="CAS_LT" name="CAS_LT" value="">
+	<input type="hidden" id="service" name="service" value="https://wf.ustc.edu.cn/default/base/workflow/start.jsp?process=com.sudytech.work.ykpsjsqV3.ykpsjsqV3" />
+	<input type="hidden" name="warn" value="" />
+	<input type="hidden" name="showCode" value="" />
+	<input type="hidden" name="qrcode" value="" />
+	<input type="hidden" id="resultInput" name="resultInput" value="" />
+	<!-- 账户 -->
+	<div class="group">
+		<input id="username" class="input-box" name="username" type="text" size="30" placeholder="" value="" onfocus="" onblur="" required />
+		<span class="bar"></span>
+	</div>
+
+	<!-- 密码 -->
+	<div class="group" id="pd">
+		<input type="password" id="password" class="input-box" name="password" type="text" size="30" value="" placeholder="" onfocus="" onblur="" mark="password" required />
+		<span class="bar"></span>
+	</div>
+
+	<div class="bottom-box">
+
+		<a id="findPassword" href="#" onclick="goFindPassword();" class="bottom-box-button-area"></a>
+		<a id="device" href="#" onclick="goDevice();" class="bottom-box-button-area" style="left: 70px"></a>
+		<button id="login" type="button" name="button" class="btn ripple bottom-box-button-area-1"></button>
+	</div>
+	<div class="sign" style="padding-top: 34px;display:none">
+		<h6 class="more-sign" id="more-sign"></h6>
+		<img style="width:40px;cursor: pointer;" src="https://passport.ustc.edu.cn/images/feishu.image" onclick="goFeishuLogin();" />
+	</div>
+
+	<div style="color:red;font-size:12px;display:none;cursor:pointer" class="notice" id="notice" onclick="showNotice()">关于部分弱密码用户暂停登录的通知</div>
+	<div style="color:red;font-size:12px;display:none;">当前为测试环境，请勿修改密码</div>
+</form>
+<a id="redirectUrl" href='' style="display:none"></a>
+
+<select id="selector" title="locale" onchange="changeLang()" class="bottom-box-selector" style="height: 20px;line-height: 20px;padding: 0px 0;font-size: 10px;left: 10px">
+	<option id="zh" value="zh" selected="selected">中文</option>
+	<option id="en" value="en">English</option>
+</select>
+
+<div class="modal fade" id="NoticeModal" tabindex="-1" role="dialog"
+	 aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">关于部分弱密码用户暂停登录的通知</h4>
+			</div>
+			<div class="modal-body" style="height:260px">
+				<p>统一身份认证弱密码账号已暂停使用，如果您无法正常登录，请在登录页点击“找回/密码”重置。
+					如有其他疑问，请点击<a href="updatePwdHelp.jsp" style="color:blue">帮助</a>，或发送邮件至netservice@ustc.edu.cn</p>
+			</div>
+			<div class="modal-footer" style="border-top:none">
+				<a type="button" class="btn-notice btn-default" data-dismiss="modal">关闭</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="confirm_like" tabindex="-1">
+	<!-- 窗口声明 -->
+	<div class="modal-dialog modal-sm">
+		<!-- 内容声明 -->
+		<div class="modal-content" style="width: 520px;">
+			<div class="modal-header" style="padding-top: 10px; padding-bottom: 10px;">
+				<button class="close" data-dismiss="modal">
+					<span>&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel"></h4>
+			</div>
+			<div class="modal-body">
+				<div id="modal_con" style="text-align: left;"></div>
+				<div id="firstDiv"></div>
+			</div>
+			<div class="modal-footer" style="text-align: right; padding-top: 10px; padding-bottom: 10px;margin-top:0;">
+				<button class="btn btn-sm btn-success" style="width:60px;background-color: rgb(3 109 160)" data-dismiss="modal" id="ok_btn">查看帮助</button>
+				<button class="btn btn-sm btn-success" style="width:60px;background-color: #c9c9c9;margin-left: 10px;" data-dismiss="modal" id="cancel_btn">取 消</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--display the contacts & copyright in footer-->
+					<div id="footer" class="footer">
+						<span class="inline-block"><a id="phone" href=tel:0551-63603488>电话：0551-63603488</a></span>
+						<span class="inline-block"><a id="email" href="mailto:netservice@ustc.edu.cn">邮箱：netservice@ustc.edu.cn</a></span>
+						<span class="inline-block">
+							<a id="copyright" href="//www.ustc.edu.cn">中国科学技术大学</a>
+							<a id="copyrightDept" href="//ustcnet.ustc.edu.cn">网络信息中心</a>
+							<span class="inline-block">
+								<a id="doc" href="https://passport.ustc.edu.cn/doc/notice.html#id2" target="_black" style="color: blue;font-weight: bolder;"></a>
+							</span>
+						</span>
+						
+						<span id="version" style="display:none" class="inline-block">CAS v1.0 &copy;</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	var clientLanguage = checkCookie();
+	$(function() {
+		$(".group").on("mouseover",function(){
+			if (IEVersion() < 12) {
+				var html = $(this).children("div").children("input").val();
+				if (html=="") {
+					this.title = $(this).children("div").children("span").html();
+				} else {
+					this.title = "";
+				}
+			} else {
+				var html = $(this).children("input").val();
+				if (html=="") {
+					this.title = $(this).children("input").attr('placeholder');
+				} else {
+					this.title = "";
+				}
+			}
+        });
+		getJsonContent(clientLanguage,false);
+		
+		if (IEVersion()==7) {
+			$('head').append('<link href="https://passport.ustc.edu.cn/css/ie7.css" rel="stylesheet" type="text/css" />')
+		} else if (IEVersion()==8) {
+			$('head').append('<link href="https://passport.ustc.edu.cn/css/ie8.css" rel="stylesheet" type="text/css" />')
+		}
+		
+		if (IEVersion()<12) {
+			$.getScript('/js/jquery.placeholder.js');
+		} else {
+			$("#header-img").attr("src","https://passport.ustc.edu.cn/images/ucas/logo.svg");
+		}
+	})
+		
+	</script>
+</html>
+<style>
+
+	.btn-notice{
+		position: relative;
+		display: inline-block;
+		width:12%;
+		min-width: 88px;
+		height: 36px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 16px;
+		margin: 0;
+		overflow: hidden;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 36px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: .04em;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		zoom: 1;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		border: none;
+		outline: 0;
+		-webkit-transition: all .2s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .2s cubic-bezier(.4,0,1,1);
+		transition: all .2s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .2s cubic-bezier(.4,0,1,1);
+		transition: all .2s cubic-bezier(.4,0,.2,1),box-shadow .2s cubic-bezier(.4,0,1,1);
+		transition: all .2s cubic-bezier(.4,0,.2,1),box-shadow .2s cubic-bezier(.4,0,1,1),-webkit-box-shadow .2s cubic-bezier(.4,0,1,1);
+		will-change: box-shadow;
+		-webkit-user-drag: none;
+		background-color: rgb(3,80,160);
+		color:white;
+	}
+	.btn-notice:hover{
+		color:white;
+		background-color: rgba(3,80,160,.8);
+	}
+	.btn-notice:active{
+		color:white;
+		background-color:rgb(40,80,160);
+	}
+</style>
+<script src="js/browser.min.js"></script>
+<script src="js/polyfill.min.js"></script>
+<script src="js/fingerprinting_v2.js"></script>
+<script>
+
+
+	function isMobile() {
+		var userAgentInfo = navigator.userAgent;
+
+		var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPod"];
+
+		var mobile_flag = false;
+
+		//根据userAgent判断是否是手机
+		for (var v = 0; v < mobileAgents.length; v++) {
+			if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+				mobile_flag = true;
+				break;
+			}
+		}
+		if (mobile_flag) {
+			$(".box").css("width","100%");
+			$(".box").css("height","inherit");
+		} else {
+			// alert("不是")
+		}
+
+		return mobile_flag;
+	}
+
+	function showNotice () {
+		$("#NoticeModal").modal('show');
+	}
+	//去找回密码页面
+	function goFindPassword(){
+		var basePath = $("#basePath").val();
+		var service='https://wf.ustc.edu.cn/default/base/workflow/start.jsp?process=com.sudytech.work.ykpsjsqV3.ykpsjsqV3';
+		if(service !=null && service !=''){
+			window.location.href="https://passport.ustc.edu.cn/"+'findPassword.jsp?service='+service;
+		}else{
+			window.location.href="https://passport.ustc.edu.cn/"+'findPassword.jsp';
+		}
+	}
+	function goFeishuLogin(){
+		var basePath = $("#basePath").val();
+		var service='https://wf.ustc.edu.cn/default/base/workflow/start.jsp?process=com.sudytech.work.ykpsjsqV3.ykpsjsqV3';
+		var redirectUrl = "";
+		if(service !=null && service !=''){
+			redirectUrl = "https://passport.ustc.edu.cn/"+'login?service='+service;
+		}else{
+			redirectUrl = "https://passport.ustc.edu.cn/"+'login';
+		}
+		var url = "https://open.zjurl.cn/open-apis/authen/v1/index?app_id="+appId+"&has_trans=1&redirect_uri="+redirectUrl+"&state=FROM-FS";
+		window.location.href=url;
+	}
+	function goDevice () {
+		var url = "https://passport.ustc.edu.cn/"+'login?service='+"https://passport.ustc.edu.cn/"+'getInfo';
+		window.location.href=url;
+	}
+
+	var browser;
+	//获取浏览器信息
+	function getBrowserInfo(){
+		var Sys = {};
+		var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+		var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+		var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器
+		var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+		if(isIE) {
+			var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+			reIE.test(userAgent);
+			var fIEVersion = parseFloat(RegExp["$1"]);
+			if(fIEVersion == 7) {
+				Sys.browser ='MSIE';
+				Sys.ver = 7;
+				return Sys;
+			} else if(fIEVersion == 8) {
+				Sys.browser ='MSIE';
+				Sys.ver = 8;
+				return Sys;
+			} else if(fIEVersion == 9) {
+				Sys.browser ='MSIE';
+				Sys.ver = 9;
+				return Sys;
+			} else if(fIEVersion == 10) {
+				Sys.browser ='MSIE';
+				Sys.ver = 10;
+				return Sys;
+			} else {
+				Sys.browser ='MSIE';
+				Sys.ver = 6;
+				return Sys;
+			}
+		} else if(isIE11) {
+			Sys.browser ='MSIE';
+			Sys.ver = 11;
+			return Sys;
+		} else if(isEdge) {
+			Sys.browser ='edge';
+			Sys.ver = 12;
+			return Sys;
+		}else{
+			Sys.browser ='other';
+			Sys.ver = 12;
+			return Sys;
+		}
+		return Sys;
+	}
+
+	//刷新验证码
+	function randomcode_refresh() {
+		var date = new Date().getTime();
+		var basePath = $("#basePath").val();
+		$(".validate-img").attr("src", basePath+"validatecode.jsp?type=login&x=" + date);
+	}
+
+	//刷新二维码
+	function refreshqrCode() {
+		var service = $("#service").val();
+		var basePath = $("#basePath").val();
+		var language=$('#selector').val();//选择语言
+		// console.log(service);
+		$.get(basePath + "CodeServlet?service=" + encodeURIComponent(service) + "&cd=" + (new Date()).getTime()+"&language="+language, function(data, status) {
+			var arr = data.split("&&");
+			//存储UUID
+			uuid = arr[0];
+			//显示二维码
+			$("#QrCodeImg").attr("src", "data:image/png;base64," + arr[1]);
+			$("#QrCodeImg").css("left", "0px");
+			createTime = (new Date()).getTime();
+			//重新加载定时器
+			outTimeFlag = false;
+			window.setInterval("isOutTime()", 1000);
+			$("#QrCodeImg").css("margin-top", "");
+		});
+	}
+	//每隔一秒秒执行一次
+	$(function() {
+		var redirectUrl = "";
+		var url = window.location.href;
+
+		var service = $("#service").val();
+		if (url.indexOf("?service") == -1) {
+			if(service !=null && service !=''){
+				redirectUrl = url+'?service='+service;
+				//向当前url添加参数，没有历史记录
+				window.history.replaceState({
+					path: redirectUrl
+				}, '', redirectUrl);
+			}
+		}
+
+
+		isMobile();
+		var qrcode='';
+		if (qrcode == 'true') {
+			$("#QrCodeImg").css("margin-top", "0px");
+			scanLogin=true;
+			interval = window.setInterval("isOutTime()", 1000);//微信扫码  开启定时器
+			createTime = (new Date()).getTime();
+			outTimeFlag=false;
+			$(".qrcode").hide();
+			$(".input_login").show();
+			$(".loginForm").hide();
+			$("#divQrCode").show();
+			qrCodeShow();
+			$("#footer").css("margin-top","");
+			$("#header").hide();
+			$("#footer").hide();
+			var lang=$("#selector").val();
+			$("#scanTitle").html(lang != "en" ? '微信扫码登录':'Scan to Login');
+			var flag1280=is1280();
+			var html='';
+			html='<div>'
+			html+=	'<div id="footMsg">'
+			if(flag1280==true){
+				html+=	lang != "en"? '<p>使用微信扫码登录需要关注“中国科学技术大学信息服务”企业号并完成认证</p>':'<p>Follow the Official Account of USTC Information Service in Wechat before you want to try "Scan to login".</p>';
+			}else{
+				html+=	lang != "en"? '<p>使用微信扫码登录需要关注“中国科学技术大学信息服务”企业号并完成认证</p><p><a href="javascript:void(0);" onclick="goPcHelp()" style="color: blue;">现在关注</a></p>':'<p>Follow the Official Account of USTC Information Service in Wechat before you want to try "Scan to login".</p><p><a href="javascript:void(0);" onclick="goPcHelp()" style="color: blue;">Try Now</a><p>';
+			}
+			html+=	'</div>'
+			html+='</div>'
+			$("#footer").before(html);
+			$("#scanTitle").show();
+		} else {
+			$(".qrcode").show();
+		}
+		//非PC端关闭扫码界面
+		if(IsPC()==false){
+			$(".qrcode").hide();
+		};
+
+		browser=getBrowserInfo();
+		window.onresize = function () {
+			var windowHeight = parseInt($("body").css("height"));
+			$("html,body").animate({ "scrollTop": windowHeight-260 }, 400);
+		}
+
+		$("#login").click(function(){
+			loginSubmit();
+		});
+
+
+		getFingerprintInfo();
+	});
+
+	function loginSubmit () {
+		var result = check();
+		if (result) {
+			$("#login").attr("disabled",true);
+			$("#login").css({"background":"gray"});
+			$(".loginForm").submit();
+		}
+	}
+
+	function getFingerprintInfo () {
+		try{
+			generateFingerprintObject().then(function (fingerprintObject){
+				$("#resultInput").val(JSON.stringify(fingerprintObject));
+			});
+		} catch (err) {
+			console.log(err);
+		}
+	}
+
+
+	//是否超时标记
+	var scanLogin=false;
+	var outTimeFlag = false;
+	var createTime = (new Date()).getTime();
+	//二维码失效判断
+	function isOutTime() {
+		var outTime = '180';
+		if (outTime != null && outTime != '' && outTimeFlag == false) {
+			var time = (new Date()).getTime() - createTime;
+			if ((outTime * 1000) < time) {
+				outTimeFlag = true;
+				if (outTimeFlag = true) {
+					var lang=$("#selector").val();
+					if(lang !='en'){
+						$("#QrCodeImg").attr('src', "https://passport.ustc.edu.cn/images/ucas/InvalidRqCode.png");
+					}else{
+						$("#QrCodeImg").attr('src', "https://passport.ustc.edu.cn/images/ucas/InvalidRqCode-en.png");
+					}
+					$("#QrCodeImg").css("margin-top", "18px");
+					$("#QrCodeImg").unbind("click");
+					$("#QrCodeImg").bind("click", function() {
+						refreshqrCode();
+					});
+					//清除定时器
+					window.clearInterval(interval);
+				}
+			}
+		}
+	}
+
+	function changeWidth(){
+		var width = $(window).width();
+		if (width>=421 && width<1260) {
+			$('#qrCode').css("left","76px");
+		} else {
+			$('#qrCode').css("left","105px");
+		}
+
+		//针对IE做处理
+		if(browser.browser=="msie"){
+			if(browser.ver=="8.0"){
+				$('#qrCode').css("left","100px");
+				$('.card').css("padding","12 8 8 3");
+			}
+			if(browser.ver=="7.0"){
+				$('#qrCode').css("left","70px");
+			}
+			if(browser.ver=="6.0"){
+				$('#qrCode').css("left","40px");
+			}
+		}
+	}
+	//检测窗口变化
+	$(window).resize(function() {
+		changeWidth();
+		//非PC端关闭扫码界面
+		if(IsPC()==false){
+			$(".qrcode").hide();
+			if(scanLogin){
+				scanLogin=false;
+				outTimeFlag=false;
+				$(".input_login").hide();
+				$("#divQrCode").hide();
+				$(".loginForm").show();
+				$("#header").show();
+				$("#footer").show();
+				$("#footMsg").remove();
+				$("#scanTitle").hide();
+			}
+		}else{
+			$(".qrcode").show();
+		}
+	});
+	var interval_msg;
+	// 鼠标滑入显示二维码提示
+	$(function() {
+		var basePath = $("#basePath").val();
+		hoverFlag=true;
+		var showCode = '';
+		if (showCode == '1') {
+			var html = '';
+			html += "<div class='validate' id='valiCode'>";
+			html += "	<div class='validate-input-area'>";
+			html += "		<div class='group'>";
+			// if (darkFlag) {
+			// 	html += "			<input id='validate' style='background-color:#3A3A3A' class='input-box' name='LT' size='8' type='text' placeholder='' value='' onfocus='' onblur='' required/>";
+			// } else {
+			html += "			<input id='validate' class='input-box' name='LT' size='8' type='text' placeholder='' value='' onfocus='' onblur='' required/>";
+			// }
+			html += "			<span class='bar'></span>";
+			html += "		</div>";
+			html += "	</div>";
+			html += "	<div class='validate-img-area'>";
+			html += "		<div class='group' style='text-align: right;'>";
+			html += "			<img onClick='randomcode_refresh()' class='validate-img' style='height:32px;margin-top: -8px;overflow: visible'/>";
+			html += "		</div>";
+			html += "	</div>";
+			html += "</div>";
+			$("#pd").after(html);
+
+			$(".notice").css({"padding-top":"0px"})
+		} else {
+			$(".notice").css({"padding-top":"25px"})
+		}
+		$('input').on('keyup', function(event){//JQuery监听回车
+			var e = event || window.event || arguments.callee.caller.arguments[0];//兼容IE
+			if(e && e.keyCode==13){// enter 键
+				loginSubmit();
+			}
+		});
+
+		$(".validate-img").attr('src', basePath+"validatecode.jsp?type=login");
+		$("#NoticeModal").modal('hide');
+		browser=getBrowserInfo();
+		changeWidth();
+		//针对IE做处理,IE6 IE7没有切换动画
+		if(browser.browser=="msie"){
+			if(browser.ver =="7.0" || browser.ver =="6.0"){
+				hoverFlag=false;
+			}
+		}
+		if(hoverFlag==true){
+			$('#divQrCode').hover(function() {
+				if(outTimeFlag==false){
+					$('#qrCode').stop().animate({
+						'left' : 0
+					}, 300, function() {
+						$('#model').show();
+						var width = $(window).width();
+						if (width>=421 && width<1260) {
+							$("#model").css("right", "10px");
+						} else {
+							$("#model").css("right", "25px");
+						}
+					})
+				}
+			}, function() {
+				$('#model').hide();
+				var width = $(window).width();
+				if (width>=421 && width<1260) {
+					$('#qrCode').stop().animate({ 'left' : '76px'}, 300)
+				} else {
+					$('#qrCode').stop().animate({ 'left' : '105px'}, 300)
+				}
+			})
+		}
+
+		$("#username").focus();
+		var type = '';
+		if (type == 1 || type == 3) {
+			var count = "";
+			var maxCount = 0;
+
+			if ('' == '0') {
+				maxCount = parseInt("");
+			} else if ('' == '1') {
+				maxCount = parseInt("");
+			}
+			if ('' == '0') {
+				if (clientLanguage == "zh") {
+					var tip = "登录密码错误次数还有" + (maxCount - count) + "次将超过最大次数将账号锁定！";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				} else if (clientLanguage == "en") {
+					var tip = "The number of login password errors will be " + (maxCount - count)+ " more than the maximum number of times!";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				}
+			}
+		}
+		if (type == 2 || type == 3) {
+			var count = "";
+			var maxCount = 0;
+
+			if ('' == '0') {
+				maxCount = parseInt("");
+			} else if ('' == '1') {
+				maxCount = parseInt("");
+			}
+			if ('' == '0') {
+				if (clientLanguage == "zh") {
+					var tip = "登录密码错误次数还有" + (maxCount - count) + "次将超过最大次数将IP锁定！";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				} else if (clientLanguage == "en") {
+					var tip = "The number of login password errors will be " + (maxCount - count)+ " more than the maximum number of times!";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				}
+			}
+		}
+
+		if ('' == '1' || '' == '1') {
+			var time = "";
+			var ipTime = "";
+
+			var stage = "";
+			var ipStage = "";
+
+			$("#page").hide();
+			$('#redirectUrl').attr('href',"error.jsp?time=" + time + "&ipTime=" + ipTime + "&stage=" + stage + "&ipStage=" + ipStage);
+			document.getElementById("redirectUrl").click();
+		}
+
+		showMsg();
+	});
+
+	function isShowMsg (tip) {
+		var placeholder_username = $("#username").attr("placeholder");
+		var placeholder_password = $("#password").attr("placeholder");
+		if (placeholder_username != '' && placeholder_password != '') {
+			alert(tip);
+			clearInterval(interval_msg);
+		}
+	}
+	function showMsg () {
+		var msg = "";
+		var service='https://wf.ustc.edu.cn/default/base/workflow/start.jsp?process=com.sudytech.work.ykpsjsqV3.ykpsjsqV3';
+		if (msg != '') {
+			if (msg == 'notice') {
+				if (clientLanguage == "zh") {
+					var tip = "您之前使用的密码被系统判定为弱密码，已暂停账号登录权限。请点击“找回/修改密码”使用邮箱或手机号修改密码，修改成功后自动恢复登录权限。如有疑问，请致电0551-63603949或邮件联系netservice@ustc.edu.cn。";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				} else if (clientLanguage == "en") {
+					var tip = "The weak password you used before has security risks and has been suspended. Please click Forget/Reset on the login page to restore your account. If you have  problems, please email to netservice@ustc.edu.cn.";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				}
+			} else if (msg == 'unusualIP') {
+				if (clientLanguage == "zh") {
+					var tip = "检测到您不是在常用IP地址登录，请输入验证码重新登录";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				} else if (clientLanguage == "en") {
+					var tip = "You are not at a commonly used IP address, please enter the verification code to log in.";
+					interval_msg=setInterval(function(){isShowMsg(tip)},500);
+				}
+			} else if (msg == 'leave') {
+				if (clientLanguage == "zh") {
+					alert("离校师生不支持登录此系统，详情请查阅通知公告");
+				} else if (clientLanguage == "en") {
+					alert("离校师生不支持登录此系统，详情请查阅通知公告");
+				}
+			} else if (msg == '4000') {
+				alert("未查询到您的用户数据，请先联系登记用户信息，电话：0551-63600800");
+			} else if (msg == '4001') {
+					alert("您未进行短信验证码验证或设备未添加信任，需要通过短信验证后进行下一步认证，系统未查询到您的手机号，请先联系数据中心登记手机号，电话：0551-63600800");
+			} else if (msg == '4002') {
+				var mobile = "";
+				var code_mobile = "";
+				var trust='';
+				var secondCode='';
+				var isWx='';
+				window.location.href="https://passport.ustc.edu.cn/"+'loginSm.jsp?type=1&code_mobile='+code_mobile+'&mobile='+mobile+"&service="+service+"&trust="+trust+"&secondCode="+secondCode+"&isWx="+isWx;
+			} else if (msg == '4003') {
+				var mobile = "";
+				var trust='';
+				var time='';
+				var code_mobile = "";
+				var secondCode='';
+				var isWx='';
+				window.location.href="https://passport.ustc.edu.cn/"+'loginSm.jsp?type=2&code_mobile='+code_mobile+'&time='+time+'&mobile='+mobile+"&service="+service+"&trust="+trust+"&secondCode="+secondCode+"&isWx="+isWx;
+			} else if (msg == 'error') {
+
+			} else if (msg == 'sm-error') {
+
+			} else if (msg == 'LT-ERROR') {
+
+			} else if (msg == 'sm-error-count') {
+				var showMessage="短信验证间隔时间过短，请稍后重试！"
+				if (clientLanguage == "en") {
+					showMessage="The SMS verification interval is too short, please try again later!"
+				}
+				alert(showMessage);
+			} else {
+				interval_msg=setInterval(function(){isShowMsg(msg)},500);
+			}
+		}
+	}
+
+
+	//显示弹窗函数
+	function show_confirm(title, msg) {
+		$("#isConfirm").val("false");
+		$("#myModalLabel").text(title);//这里设置弹窗的标头
+		$("#modal_con").text(msg);//设置提示的信息
+		$("#confirm_like").modal({//显示弹窗
+			show : true,
+		});
+		//确定按钮事件函数
+		$("#ok_btn").click(function(){
+			window.location.href = "updatePwdHelp.jsp";
+		});
+		//取消按钮事件函数
+		$("#cancel_btn").click(function(){
+			$("#confirm_like").off("hidden.bs.modal");
+			$("#confirm_like").on("hidden.bs.modal");
+		});
+		//弹窗的关闭按钮事件函数
+		$("#confirm_like .close").click(function(){
+			$("#confirm_like").off("hidden.bs.modal");
+			$("#confirm_like").on("hidden.bs.modal");
+		});
+	}
+	function check() {
+		$("#CAS_LT").val("LT-750103cea8e0480ebda658ed264cf891");
+		var id = $("#username").val();
+		var pwd = $("#password").val();
+		var rand = $("#validate").val();
+		var showCode = '';
+		$("#showCode").val(showCode);
+		if (id == "") {
+			if (clientLanguage == "zh") {
+				alert("请输入账号！");
+			} else if (clientLanguage == "en") {
+				alert("Please input Username!");
+			}
+			$("#username").focus();
+			return false;
+		}
+		if (pwd == "") {
+			if (clientLanguage == "zh") {
+				alert("请输入密码！");
+			} else if (clientLanguage == "en") {
+				alert("Please enter your Password!");
+			}
+			$("#password").focus();
+			return false;
+		}
+
+		if (showCode == '1' && rand == "") {
+			if (clientLanguage == "zh") {
+				alert("请输入验证码！");
+			} else if (clientLanguage == "en") {
+				alert("Please enter verification code!");
+			}
+			$("#validate").focus();
+			return false;
+		} else if (showCode == '1' && rand != "") {
+			$("#validate").val(rand.toLowerCase());
+		}
+		return true;
+	}
+
+
+	//判断设备是否PC
+	function IsPC() {
+		var userAgentInfo = navigator.userAgent;
+		var Agents = ["Android", "iPhone","SymbianOS", "Windows Phone","iPad", "iPod"];
+		var flag = true;
+		for (var v = 0; v < Agents.length; v++) {
+			if (userAgentInfo.indexOf(Agents[v]) > 0) {
+				flag = false;
+				break;
+			}
+		}
+		return flag;
+	}
+
+	//去帮助页面
+	function goHelp(){
+		window.location.href="https://passport.ustc.edu.cn/"+"weChatScanLoginPCHelp.jsp"
+	}
+</script>
