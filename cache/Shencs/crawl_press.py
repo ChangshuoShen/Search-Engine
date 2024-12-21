@@ -75,7 +75,7 @@ def parse_detail_page(detail_url):
 
     files = []
     # 查找 <a> 标签中直接包含的文件链接
-    links = soup.select('div.wp_articlecontent a')
+    links = soup.select('div.wp_articlecontent p a')
     for link in links:
         file_url = link.get("href", "").strip()
         if not file_url:  # 如果没有 href，跳过
@@ -107,7 +107,7 @@ def parse_list_page(url):
 
     details = []
     # 查找列表中的 <a> 标签
-    list_items = soup.select('div.node-title a')
+    list_items = soup.select('h2.node-title a')
     print(f"Found {len(list_items)} items on page {url}")
 
     for item in list_items:
