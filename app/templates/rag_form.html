@@ -1,0 +1,16 @@
+<!-- rag_form.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入查询</title>
+</head>
+<body>
+    <h1>请输入查询</h1>
+    <form method="POST" action="{{ url_for('main.rag') }}">
+        <textarea name="query" rows="4" cols="50" placeholder="请输入你的查询..."></textarea><br>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
