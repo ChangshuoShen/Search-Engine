@@ -1,24 +1,26 @@
+import os
 import happybase
-from happybase import Table
 from typing import List, Dict
-import sys
-sys.path.append("..")
 from utils import get_logger
+from .const import HBASE_HOST, HBASE_TABLE_NAME, HBASE_COLUMN_FAMILY, VALID_EXTENSIONS, HDFS_TARGET_DIR, LOCAL_CACHE_DIR
+
 
 class USTCHBase:
-    def __init__(self, host='localhost', column_family=['cf0']):
+    """
+    封装 HBase 操作类。
+    """
+    def __init__(self, host=HBASE_HOST, column_family=HBASE_COLUMN_FAMILY):
         self.logger = get_logger('ustc-hbase')
         self.logger.info("HBase Connecting...")
         self.connection = happybase.Connection(host)
         self.connection.open()
-        self.name = 'ustc'
+        self.name = HBASE_TABLE_NAME
         if self.name.encode() not in self.connection.tables():
             assert column_family is not None, "Need to indicate column families to create a table"
             self.create_table(self.name, column_family)  
         self.logger.info("HBase Connected Successfully!")
         self.table = self.get_table(self.name)
-        
-        
+
     def __enter__(self):
         return self
     
@@ -28,31 +30,71 @@ class USTCHBase:
             traceback.print_exc()
         
     def create_table(self, table_name: str, column_families: List[str]):
-        column_families = {family : dict() for family in column_families}
+        column_families = {family: dict() for family in column_families}
         self.connection.create_table(table_name, column_families)
-        self.logger.info("Table {table_name} is created.")
+        self.logger.info(f"Table {table_name} is created.")
         
-    def get_table(self, table_name: str) -> Table:
+    def get_table(self, table_name: str):
         try:
-            table = self.connection.table(table_name)
+            return self.connection.table(table_name)
         except Exception as e:
             self.logger.warning(e, exc_info=True)
-            table = None
-        return table
+            return None
         
     def put(self, row: bytes, data: Dict[bytes, bytes]):
-        
         for key in data.keys():
             data[key] = data[key].encode('utf-8') if isinstance(data[key], str) else data[key]
         self.table.put(row=row, data=data)
-        
-    def batch_put(self, rows: List[str], data: List[Dict[str, str]]):
-        with self.table.batch() as bat:
-            for row, item in zip(rows, data):
-                row = row.encode('utf-8')
-                item = {k.encode('utf-8') : v.encode('utf-8') for k,v in item.items()}
-                bat.put(row=row, data=item)
 
+    def query_meta(self, file_name: str):
+        """
+        根据文件名查询文件的元数据。
+        """
+        row = self.table.row(file_name.encode("utf-8"))
+        if not row:
+            self.logger.warning(f"No data found for file: {file_name}")
+            return None
+        return {key.decode("utf-8"): value.decode("utf-8") for key, value in row.items()}
+
+    def scan(self):
+        """
+        扫描表中的所有数据。
+        """
+        for key, data in self.table.scan():
+            yield key.decode("utf-8"), {k.decode("utf-8"): v.decode("utf-8") for k, v in data.items()}
+
+
+def store_meta_in_hbase(local_dir=LOCAL_CACHE_DIR, hdfs_dir=HDFS_TARGET_DIR):
+    """
+    遍历本地目录，将文件元数据存储到 HBase。
+    """
+    with USTCHBase() as hbase:
+        for root, _, files in os.walk(local_dir):
+            for file in files:
+                file_path = os.path.join(root, file)
+                file_extension = file.split('.')[-1].lower()
+
+                # 筛选有意义的文件类型
+                if file_extension in VALID_EXTENSIONS:
+                    # 构造 HDFS 路径
+                    hdfs_path = os.path.join(hdfs_dir, os.path.relpath(file_path, local_dir)).replace("\\", "/")
+
+                    # 构造元数据
+                    row_key = file  # 使用文件名作为 Row Key
+                    meta_data = {
+                        "cf0:title": file,
+                        "cf0:type": file_extension,
+                        "cf0:hdfs_path": hdfs_path
+                    }
+
+                    # 写入 HBase
+                    hbase.put(row=row_key.encode("utf-8"),
+                              data={k.encode("utf-8"): v.encode("utf-8") for k, v in meta_data.items()})
+                    print(f"Stored meta data for file: {file}")
+                    
+                    
+                    
+                    
 # 基本用法-备忘
         
 # 存储数据：Hbase里 存储的数据都是原始的字节字符串    
