@@ -1,8 +1,10 @@
 import os
 import happybase
+import json
 from typing import List, Dict
-from utils import get_logger
-from .const import HBASE_HOST, HBASE_TABLE_NAME, HBASE_COLUMN_FAMILY, VALID_EXTENSIONS, HDFS_TARGET_DIR, LOCAL_CACHE_DIR
+from .utils import get_logger
+from .const import HBASE_HOST, HBASE_TABLE_NAME, HBASE_COLUMN_FAMILY, HDFS_TARGET_DIR, LOCAL_CACHE_DIR
+from .urlcontent import URLContent
 
 
 class USTCHBase:
@@ -17,30 +19,30 @@ class USTCHBase:
         self.name = HBASE_TABLE_NAME
         if self.name.encode() not in self.connection.tables():
             assert column_family is not None, "Need to indicate column families to create a table"
-            self.create_table(self.name, column_family)  
+            self.create_table(self.name, column_family)
         self.logger.info("HBase Connected Successfully!")
         self.table = self.get_table(self.name)
 
     def __enter__(self):
         return self
-    
+
     def __exit__(self, type, message, traceback):
         self.connection.close()
         if isinstance(type, Exception):
             traceback.print_exc()
-        
+
     def create_table(self, table_name: str, column_families: List[str]):
         column_families = {family: dict() for family in column_families}
         self.connection.create_table(table_name, column_families)
         self.logger.info(f"Table {table_name} is created.")
-        
+
     def get_table(self, table_name: str):
         try:
             return self.connection.table(table_name)
         except Exception as e:
             self.logger.warning(e, exc_info=True)
             return None
-        
+
     def put(self, row: bytes, data: Dict[bytes, bytes]):
         for key in data.keys():
             data[key] = data[key].encode('utf-8') if isinstance(data[key], str) else data[key]
@@ -64,33 +66,33 @@ class USTCHBase:
             yield key.decode("utf-8"), {k.decode("utf-8"): v.decode("utf-8") for k, v in data.items()}
 
 
-def store_meta_in_hbase(local_dir=LOCAL_CACHE_DIR, hdfs_dir=HDFS_TARGET_DIR):
+def store_meta_in_hbase(json_file: str, hdfs_dir=HDFS_TARGET_DIR):
     """
-    遍历本地目录，将文件元数据存储到 HBase。
+    从 JSON 文件加载文件元数据，并存储到 HBase。
     """
     with USTCHBase() as hbase:
-        for root, _, files in os.walk(local_dir):
-            for file in files:
-                file_path = os.path.join(root, file)
-                file_extension = file.split('.')[-1].lower()
+        # 加载 JSON 文件
+        with open(json_file, "r", encoding="utf-8") as f:
+            file_data = json.load(f)
 
-                # 筛选有意义的文件类型
-                if file_extension in VALID_EXTENSIONS:
-                    # 构造 HDFS 路径
-                    hdfs_path = os.path.join(hdfs_dir, os.path.relpath(file_path, local_dir)).replace("\\", "/")
+        for file_path, meta in file_data.items():
+            # 构造 HDFS 路径
+            hdfs_path = os.path.join(hdfs_dir, os.path.relpath(file_path, LOCAL_CACHE_DIR)).replace("\\", "/")
 
-                    # 构造元数据
-                    row_key = file  # 使用文件名作为 Row Key
-                    meta_data = {
-                        "cf0:title": file,
-                        "cf0:type": file_extension,
-                        "cf0:hdfs_path": hdfs_path
-                    }
+            # 构造 URLContent 对象
+            url_content = URLContent(
+                file_name=os.path.basename(file_path),
+                hdfs_path=hdfs_path,
+                keywords=meta.get("keywords", []),
+                high_freq_words=meta.get("high_freq_words", [])
+            )
 
-                    # 写入 HBase
-                    hbase.put(row=row_key.encode("utf-8"),
-                              data={k.encode("utf-8"): v.encode("utf-8") for k, v in meta_data.items()})
-                    print(f"Stored meta data for file: {file}")
+            # 存储到 HBase
+            hbase.put(
+                row=file_path.encode("utf-8"),  # 使用文件路径作为 Row Key
+                data=url_content.to_hbase_dict()
+            )
+            print(f"Stored metadata for file: {file_path}")
                     
                     
                     

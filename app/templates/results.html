@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索结果</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container my-4">
+        <form action="/" method="POST" class="mb-4">
+            <div class="input-group">
+                <input type="text" name="query" class="form-control" value="{{ query }}" required>
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </div>
+        </form>
+
+        {% if results %}
+            <div class="row">
+                {% for result in results %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ result.title }}</h5>
+                                <p class="card-text">
+                                    <strong>关键词:</strong> {{ result.keywords | join(", ") }}<br>
+                                    <strong>高频词:</strong> {{ result.high_freq_words | join(", ") }}
+                                </p>
+                                <a href="{{ url_for('main.preview', filepath=result.hdfs_path) }}" class="btn btn-info">预览</a>
+                                <a href="{{ url_for('main.download', filepath=result.hdfs_path) }}" class="btn btn-success">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>未找到相关结果。</p>
+        {% endif %}
+    </div>
+</body>
+</html>
