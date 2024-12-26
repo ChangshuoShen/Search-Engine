@@ -65,6 +65,8 @@ class USTCHBase:
         for key, data in self.table.scan():
             yield key.decode("utf-8"), {k.decode("utf-8"): v.decode("utf-8") for k, v in data.items()}
 
+    def close_connection(self):
+        self.connection.close()
 
 def store_meta_in_hbase(json_file: str, hdfs_dir=HDFS_TARGET_DIR):
     """
