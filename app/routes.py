@@ -2,7 +2,7 @@ import requests
 import os
 from flask import Blueprint, render_template, request, send_file, current_app, jsonify
 from database.search import SearchEngine
-# from transformers import AutoTokenizer
+from transformers import AutoTokenizer
 
 main = Blueprint('main', __name__)
 search_engine = SearchEngine()
