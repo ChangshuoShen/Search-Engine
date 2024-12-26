@@ -3,6 +3,12 @@
 
 by 申长硕 & 高茂航
 
+<video width="640" height="380" controls>
+  <source src="./app/static/videos/search_demo.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
 ## 实验内容
 
 从科大的网站爬取`文件数据`，存储在分布式数据库（HBase）中，实现一个搜索引擎，实现校内文件搜索的目的。
